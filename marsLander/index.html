@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mars Lander</title>
     <link rel="stylesheet" href="css/styles.css">
-     
+
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -14,6 +14,20 @@
     <div class="container">
         <div class="header">Mars Lander</div>
         <div class="main">Display</div>
+        //lines 18-30 are the updates for button click to start lander
+          <div class="main">
+            <a href='linkhref.html' id='mylink'>Launch Lander...</a>
+              <script type="text/javascript">
+                var myLink = document.getElementById('mylink');
+                myLink.onclick = function(){
+                var script = document.createElement("script");
+                script.type = "text/javascript";
+                script.src = "../Main.js.";
+                document.getElementsByTagName("head")[0].appendChild(script);
+                return false;
+              }
+            </script>
+          </div>
         <div class="sidebar">Controls</div>
         <div class="footer">Landing</div>
     </div>
