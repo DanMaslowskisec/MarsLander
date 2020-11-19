@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../images/mars-1.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+.container {
+    display: grid;
+    grid-template-rows: 120px 540px 120px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    font-size: 50px;
+    color: rgba(104, 104, 104, .85);
+}
+
+.button {
+  width:200px;
+  height:100px;
+  background-color:#E87373;
+  border-color: #000000;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 50%;
+
+}
+
+.header {
+    display: grid;
+    grid-row: 1 / span 1;
+    grid-column: 1/ span 3;
+    /* background: radial-gradient(rgba(220, 220, 220, .85), rgba(190, 190, 190, .85)); */
+    place-items: center center;
+    font-size: 50px;
+    color: rgba(104, 104, 104, .85);
+}
+
+.main {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 2;
+    /* background: radial-gradient(rgba(169, 169, 169, .85), rgba(245, 245, 245, .85)); */
+    display: grid;
+    place-content: center center;
+    font-size: 50px;
+    color: rgba(104, 104, 104, .85);
+}
+
+.sidebar {
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 1;
+    /* background: radial-gradient(rgba(200, 200, 200, .85), rgba(206, 192, 192, 0.85)); */
+    display: grid;
+    place-items: center center;
+    font-size: 50px;
+    color: rgba(104, 104, 104, .85);
+}
+
+.footer {
+    grid-row: 3 / span 2;
+    grid-column: 1 / span 3;
+    /* background: radial-gradient(rgba(104, 104, 104, .85), rgba(201, 197, 197, 0.85)); */
+    display: grid;
+    place-items: center center;
+    font-size: 50px;
+    color: rgba(104, 104, 104, .85);
+}
+
+/* Engine Report */
+
+.texArea {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}

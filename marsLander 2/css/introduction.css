@@ -1,0 +1,99 @@
+/* styling for the introduction */
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+        background: url(../images/mars.jpeg) no-repeat center center fixed;
+        background-size: cover;
+        color: rgba(255, 255, 255, .80);
+        font-family: 'Pathway Gothic One',
+        sans-serif;
+        font-size: 5vw;
+        line-height: 1.3;
+        overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    perspective: 380px;
+    perspective-origin: bottom;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: visible;
+    transform: scaleY(0.9);
+}
+
+.credits {
+    position: absolute;
+    top: 0;
+    left: 13%;
+    right: 13%;
+    height: 100%;
+    animation: mars 30s infinite;
+}
+
+.heading {
+    margin-bottom: 5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p {
+    padding: o.5rem 0;
+}
+
+.btn {
+    position: absolute;
+    width: 15vw;
+    height: 15vh;
+    font-size: 3rem;
+    animation: entry 31s ease-in-out;
+}
+
+@keyframes mars {
+    0% {
+        transform: rotateX(21deg) translate3d(0, 100rem, 0);
+        opacity: 1;
+    }
+    85% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotateX(21deg) translate3d(0, -150rem, 0);
+        opacity: 0;
+    }
+}
+
+@keyframes entry {
+    0% {
+        opacity: 0;
+    }
+    85% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
